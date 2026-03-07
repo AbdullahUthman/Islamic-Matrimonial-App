@@ -1,7 +1,8 @@
 # Islamaic Matrimonial App
 An Islamic Matrimonial App made in Flutter. The motivation behind the app is to provide a halal platform for people seeking marriage ("Rishta") and avoiding any free mixing between the genders and any haram environment. 
 ## Screens
-<img width="483" height="922" alt="screen1" src="https://github.com/user-attachments/assets/06d38405-6bc9-45d4-b777-0970e1f2f8e2" />
+<img width="483" height="922" alt="screen1" src="https://github.com/user-attachments/assets/06d38405-6bc9-45d4-b777-0970e1f2f8e2" /> Login Screen
+
 
 
 This project is a starting point for a Flutter application.
