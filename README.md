@@ -20,10 +20,10 @@ An Islamic Matrimonial App made in Flutter. The motivation behind the app is to 
 <img width="300" src="https://github.com/user-attachments/assets/58c1f531-fa2b-4721-a3c1-ed22365c826b">
 
 ### Profile Screen
-<img width="300" src="https://github.com/user-attachments/assets/c7410745-2e06-465b-8d5c-9a72c1df9fcd">
-
-### Profile Screen (Details)
-<img width="300" src="https://github.com/user-attachments/assets/3f172045-f0dd-49f9-bfa7-c08a9e306ffb">
+<p>
+  <img src="https://github.com/user-attachments/assets/c7410745-2e06-465b-8d5c-9a72c1df9fcd" width="250">
+  <img src="https://github.com/user-attachments/assets/3f172045-f0dd-49f9-bfa7-c08a9e306ffb" width="250">
+</p>
 
 ### Shortlist Screen
 <img width="300" src="https://github.com/user-attachments/assets/3d8607bd-30ce-4c56-b582-491c0c7dba41">
