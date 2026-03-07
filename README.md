@@ -2,8 +2,23 @@
 
 An Islamic Matrimonial App made in Flutter. The motivation behind the app is to provide a halal platform for people seeking marriage ("Rishta") while avoiding free mixing between genders and any haram environment.
 
-### Built with 
-Flutter and Dart
+## About the Project
+This project was built as a Flutter portfolio application to demonstrate UI development, filtering logic, and basic application structure.
+
+The goal was to make a halal matrimonial platform where users can browse profiles while staying under Shariah guidelines.
+
+## Project Structure
+
+lib/
+ ├── data/        # Dummy profile data
+ ├── models/      # User and filter models
+ ├── screens/     # App screens
+ ├── widgets/     # Reusable UI components
+ └── main.dart
+
+### Tech Stack 
+* Flutter
+* Dart
 
 ### Features
 * Gender based profile browsing (male users see female profiles and vice versa)
@@ -12,7 +27,7 @@ Flutter and Dart
 
 ### Limitations
 * The app does not have a backend data base (relies on hard-coded dummy data)
-* Call feature is yet to be implemented
+* Direct calling functionality is planned but not yet implemented
 * No State management
 
 ## Screens
@@ -40,3 +55,31 @@ Flutter and Dart
 
 ### Shortlist Screen
 <img width="300" src="https://github.com/user-attachments/assets/3d8607bd-30ce-4c56-b582-491c0c7dba41">
+
+## How to Run
+
+Follow these steps to run the Flutter app locally.
+
+### 1. Prerequisites
+Make sure you have the following installed:
+
+- [Flutter SDK](https://docs.flutter.dev/get-started/install)
+- Android Studio or VS Code with Flutter/Dart extensions
+- An Android/iOS emulator or a physical device
+
+Verify Flutter installation:
+
+```bash
+flutter doctor
+```
+
+### 2. Clone the Repository
+```bash
+git clone https://github.com/abdullahuthman/matrimonial_app.git
+```
+
+### 3. Install dependancies
+```bash
+flutter pub get
+```
+
