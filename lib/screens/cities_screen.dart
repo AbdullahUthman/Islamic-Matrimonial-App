@@ -1,9 +1,9 @@
-import 'package:abdullah/screens/profiles_screen.dart';
-import 'package:abdullah/screens/shortlist_screen.dart';
+import 'package:matrimonial_app/screens/profiles_screen.dart';
+import 'package:matrimonial_app/screens/shortlist_screen.dart';
 import 'package:flutter/material.dart';
 import '../widgets/city_card.dart';
-import 'package:abdullah/models/filter.dart';
-import 'package:abdullah/models/user.dart';
+import 'package:matrimonial_app/models/filter.dart';
+import 'package:matrimonial_app/models/user.dart';
 
 
 class CitiesScreen extends StatelessWidget {

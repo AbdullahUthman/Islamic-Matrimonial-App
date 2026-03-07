@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:abdullah/data/male_dummy_data.dart';
-import 'package:abdullah/models/user.dart';
+import 'package:matrimonial_app/data/male_dummy_data.dart';
+import 'package:matrimonial_app/models/user.dart';
 
 class ContactButton extends StatefulWidget{
   final User user;

@@ -1,4 +1,4 @@
-import 'package:abdullah/models/profile.dart';
+import 'package:matrimonial_app/models/profile.dart';
 import 'package:flutter/material.dart';
 
 class Filter {

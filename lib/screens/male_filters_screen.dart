@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:abdullah/models/profile.dart';
-import 'package:abdullah/models/filter.dart';
-import 'package:abdullah/widgets/age_slider.dart';
+import 'package:matrimonial_app/models/profile.dart';
+import 'package:matrimonial_app/models/filter.dart';
+import 'package:matrimonial_app/widgets/age_slider.dart';
 
 class MaleFiltersScreen extends StatefulWidget {
   @override

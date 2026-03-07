@@ -1,11 +1,11 @@
-import 'package:abdullah/data/male_dummy_data.dart';
-import 'package:abdullah/models/profile.dart';
-import 'package:abdullah/widgets/shortlist_button.dart';
+import 'package:matrimonial_app/data/male_dummy_data.dart';
+import 'package:matrimonial_app/models/profile.dart';
+import 'package:matrimonial_app/widgets/shortlist_button.dart';
 import 'package:flutter/material.dart';
 import '../data/female_dummy_data.dart';
-import 'package:abdullah/main.dart';
-import 'package:abdullah/widgets/contact_button.dart';
-import 'package:abdullah/models/user.dart';
+import 'package:matrimonial_app/main.dart';
+import 'package:matrimonial_app/widgets/contact_button.dart';
+import 'package:matrimonial_app/models/user.dart';
 
 class ProfileScreen extends StatelessWidget{
   final User user;

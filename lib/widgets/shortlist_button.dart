@@ -1,9 +1,9 @@
-import 'package:abdullah/data/male_dummy_data.dart';
+import 'package:matrimonial_app/data/male_dummy_data.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:abdullah/data/female_dummy_data.dart';
-import 'package:abdullah/models/profile.dart';
-import 'package:abdullah/models/user.dart';
+import 'package:matrimonial_app/data/female_dummy_data.dart';
+import 'package:matrimonial_app/models/profile.dart';
+import 'package:matrimonial_app/models/user.dart';
 
 class ShortlistButton extends StatefulWidget {
   final String userID;

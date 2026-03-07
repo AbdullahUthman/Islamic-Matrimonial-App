@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import '../data/female_dummy_data.dart';
-import 'package:abdullah/models/profile.dart';
-import 'package:abdullah/models/user.dart';
-import 'package:abdullah/data/male_dummy_data.dart';
-import 'package:abdullah/models/user.dart';
+import 'package:matrimonial_app/models/profile.dart';
+import 'package:matrimonial_app/models/user.dart';
+import 'package:matrimonial_app/data/male_dummy_data.dart';
+import 'package:matrimonial_app/models/user.dart';
 
 class ProfileCard extends StatelessWidget{
   final Profile profile;

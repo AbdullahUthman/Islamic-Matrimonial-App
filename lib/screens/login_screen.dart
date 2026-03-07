@@ -1,8 +1,8 @@
-import 'package:abdullah/main.dart';
+import 'package:matrimonial_app/main.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:abdullah/models/user.dart';
-import 'package:abdullah/screens/main_screen.dart';
+import 'package:matrimonial_app/models/user.dart';
+import 'package:matrimonial_app/screens/main_screen.dart';
 
 class LoginScreen extends StatefulWidget{
   @override

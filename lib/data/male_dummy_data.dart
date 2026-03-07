@@ -1,4 +1,4 @@
-import 'package:abdullah/models/profile.dart';
+import 'package:matrimonial_app/models/profile.dart';
 
 List<Profile> dummyMaleProfiles = [
 

@@ -1,11 +1,11 @@
-import 'package:abdullah/screens/cities_screen.dart';
-import 'package:abdullah/screens/female_filters_screen.dart';
-import 'package:abdullah/screens/login_screen.dart';
-import 'package:abdullah/screens/male_filters_screen.dart';
-import 'package:abdullah/screens/shortlist_screen.dart';
+import 'package:matrimonial_app/screens/cities_screen.dart';
+import 'package:matrimonial_app/screens/female_filters_screen.dart';
+import 'package:matrimonial_app/screens/login_screen.dart';
+import 'package:matrimonial_app/screens/male_filters_screen.dart';
+import 'package:matrimonial_app/screens/shortlist_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:abdullah/models/filter.dart';
-import 'package:abdullah/models/user.dart';
+import 'package:matrimonial_app/models/filter.dart';
+import 'package:matrimonial_app/models/user.dart';
 
 class MainScreen extends StatefulWidget {
   final User user;

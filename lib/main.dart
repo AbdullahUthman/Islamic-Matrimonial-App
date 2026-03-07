@@ -1,8 +1,8 @@
-import 'package:abdullah/screens/female_filters_screen.dart';
-import 'package:abdullah/screens/login_screen.dart';
-import 'package:abdullah/screens/main_screen.dart';
-import 'package:abdullah/screens/male_filters_screen.dart';
-import 'package:abdullah/screens/profiles_screen.dart';
+import 'package:matrimonial_app/screens/female_filters_screen.dart';
+import 'package:matrimonial_app/screens/login_screen.dart';
+import 'package:matrimonial_app/screens/main_screen.dart';
+import 'package:matrimonial_app/screens/male_filters_screen.dart';
+import 'package:matrimonial_app/screens/profiles_screen.dart';
 import 'package:flutter/material.dart';
 import 'screens/profile_screen.dart';
 import 'screens/cities_screen.dart';

@@ -1,4 +1,4 @@
-import 'package:abdullah/screens/profiles_screen.dart';
+import 'package:matrimonial_app/screens/profiles_screen.dart';
 import 'package:flutter/material.dart';
 import '../screens/profiles_screen.dart';
 

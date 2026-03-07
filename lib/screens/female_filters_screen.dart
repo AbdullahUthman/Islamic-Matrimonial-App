@@ -1,10 +1,10 @@
-import 'package:abdullah/screens/cities_screen.dart';
-import 'package:abdullah/screens/main_screen.dart';
-import 'package:abdullah/widgets/age_slider.dart';
+import 'package:matrimonial_app/screens/cities_screen.dart';
+import 'package:matrimonial_app/screens/main_screen.dart';
+import 'package:matrimonial_app/widgets/age_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:abdullah/models/profile.dart';
-import 'package:abdullah/models/user.dart';
-import 'package:abdullah/models/filter.dart';
+import 'package:matrimonial_app/models/profile.dart';
+import 'package:matrimonial_app/models/user.dart';
+import 'package:matrimonial_app/models/filter.dart';
 
 class FemaleFiltersScreen extends StatefulWidget{
   @override

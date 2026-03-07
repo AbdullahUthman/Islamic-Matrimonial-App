@@ -1,11 +1,11 @@
-import 'package:abdullah/data/male_dummy_data.dart';
-import 'package:abdullah/main.dart';
+import 'package:matrimonial_app/data/male_dummy_data.dart';
+import 'package:matrimonial_app/main.dart';
 import 'package:flutter/material.dart';
-import 'package:abdullah/models/profile.dart';
-import 'package:abdullah/data/female_dummy_data.dart';
-import 'package:abdullah/widgets/profile_card.dart';
-import 'package:abdullah/screens/profile_screen.dart';
-import 'package:abdullah/models/user.dart';
+import 'package:matrimonial_app/models/profile.dart';
+import 'package:matrimonial_app/data/female_dummy_data.dart';
+import 'package:matrimonial_app/widgets/profile_card.dart';
+import 'package:matrimonial_app/screens/profile_screen.dart';
+import 'package:matrimonial_app/models/user.dart';
 
 class ShortlistScreen extends StatefulWidget{
   final User user;
