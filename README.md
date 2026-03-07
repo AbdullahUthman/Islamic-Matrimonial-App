@@ -1,6 +1,6 @@
 # Islamic Matrimonial App
 
-An Islamic Matrimonial App made in Flutter. The motivation behind the app is to provide a halal platform for people seeking marriage ("Rishta") and avoiding free mixing between genders and any haram environment.
+An Islamic Matrimonial App made in Flutter. The motivation behind the app is to provide a halal platform for people seeking marriage ("Rishta") while avoiding free mixing between genders and any haram environment.
 
 ## Screens
 
@@ -8,27 +8,22 @@ An Islamic Matrimonial App made in Flutter. The motivation behind the app is to 
 <img width="300" src="https://github.com/user-attachments/assets/06d38405-6bc9-45d4-b777-0970e1f2f8e2">
 
 ### Cities Screen
+<img width="300" src="https://github.com/user-attachments/assets/afc8957e-6ac6-4cc0-9ae8-0741c67ca037">
 
-<img width="478" height="921" alt="screen2" src="https://github.com/user-attachments/assets/afc8957e-6ac6-4cc0-9ae8-0741c67ca037" />
-
-### Drower
-
-<img width="475" height="917" alt="screen3" src="https://github.com/user-attachments/assets/65af0563-eac0-4962-bc2d-2647ef2428e3" />
+### Drawer
+<img width="300" src="https://github.com/user-attachments/assets/65af0563-eac0-4962-bc2d-2647ef2428e3">
 
 ### Filters
-<img width="498" height="923" alt="screen4" src="https://github.com/user-attachments/assets/973773c5-c1e2-49f4-9250-5b24f8f528f4" />
+<img width="300" src="https://github.com/user-attachments/assets/973773c5-c1e2-49f4-9250-5b24f8f528f4">
 
 ### Profiles Screen
-<img width="503" height="922" alt="screen5" src="https://github.com/user-attachments/assets/58c1f531-fa2b-4721-a3c1-ed22365c826b" />
+<img width="300" src="https://github.com/user-attachments/assets/58c1f531-fa2b-4721-a3c1-ed22365c826b">
 
-###Profile Screen
-<img width="504" height="915" alt="screen6" src="https://github.com/user-attachments/assets/c7410745-2e06-465b-8d5c-9a72c1df9fcd"<img width="511" height="919" alt="screen7" src="https://github.com/user-attachments/assets/3f172045-f0dd-49f9-bfa7-c08a9e306ffb" />
- />
-![Uploading screen7.png…]()
+### Profile Screen
+<img width="300" src="https://github.com/user-attachments/assets/c7410745-2e06-465b-8d5c-9a72c1df9fcd">
 
-###Shortlist Screen
-<img width="506" height="919" alt="screen8" src="https://github.com/user-attachments/assets/3d8607bd-30ce-4c56-b582-491c0c7dba41" />
+### Profile Screen (Details)
+<img width="300" src="https://github.com/user-attachments/assets/3f172045-f0dd-49f9-bfa7-c08a9e306ffb">
 
-
-
- 
+### Shortlist Screen
+<img width="300" src="https://github.com/user-attachments/assets/3d8607bd-30ce-4c56-b582-491c0c7dba41">
