@@ -2,6 +2,19 @@
 
 An Islamic Matrimonial App made in Flutter. The motivation behind the app is to provide a halal platform for people seeking marriage ("Rishta") while avoiding free mixing between genders and any haram environment.
 
+### Built with 
+Flutter and Dart
+
+### Features
+* Gender based profile browsing (male users see female profiles and vice versa)
+* Shortlisting profiles
+* Filtering viewable profiles and cities
+
+### Limitations
+* The app does not have a backend data base (relies on hard-coded dummy data)
+* Call feature is yet to be implemented
+* No State management
+
 ## Screens
 
 ### Login Screen
