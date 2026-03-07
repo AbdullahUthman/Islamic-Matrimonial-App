@@ -1,0 +1,432 @@
+import 'package:abdullah/models/profile.dart';
+
+List<Profile> dummyMaleProfiles = [
+
+  // ── Lahore ──────────────────────────────────────────────────────────────────
+
+  Profile(
+    id: 'm1',
+    name: 'Usman Malik',
+    age: 26,
+    city: 'Lahore',
+    occupation: 'Software Engineer',
+    hobbies: [Hobby.reading, Hobby.fitness, Hobby.travelling],
+    traits: [Trait.religious, Trait.hardworking, Trait.humble],
+    description:
+    'Assalamu Alaikum. I am a software engineer from Lahore with a strong commitment '
+        'to my deen. I pray five times a day and try to live by Islamic values in all '
+        'aspects of life. I am looking for a pious and family-oriented partner. '
+        'My family is involved and all serious inquiries are welcome.',
+    imageUrl: 'assets/man3.jpg',
+    contact: '+92-300-1111222',
+    status: MaleMaritalStatus.neverMarried,
+    hasChildren: false,
+    isShortListed: false,
+  ),
+
+  Profile(
+    id: 'm2',
+    name: 'Bilal Ahmed',
+    age: 30,
+    city: 'Lahore',
+    occupation: 'Doctor',
+    hobbies: [Hobby.sports, Hobby.cooking, Hobby.reading],
+    traits: [Trait.funny, Trait.caring, Trait.familyOriented],
+    description:
+    'Salam! I am a doctor based in Lahore. I come from a close-knit family and '
+        'I value warmth and laughter in a home. I am looking for someone kind, '
+        'God-fearing and ready to build a life together. My parents are actively '
+        'involved in the process.',
+    imageUrl: 'assets/man7.jpg',
+    contact: '+92-321-2233445',
+    status: MaleMaritalStatus.neverMarried,
+    hasChildren: false,
+    isShortListed: false,
+  ),
+
+  Profile(
+    id: 'm3',
+    name: 'Hassan Chaudhry',
+    age: 35,
+    city: 'Lahore',
+    occupation: 'Businessman',
+    hobbies: [Hobby.travelling, Hobby.photography, Hobby.fitness],
+    traits: [Trait.ambitious, Trait.honest, Trait.strong],
+    description:
+    'Assalamu Alaikum. I am a businessman from Lahore, previously married with '
+        'no children. I am financially stable and emotionally mature. I am looking '
+        'for a sincere and understanding partner to start fresh. Serious families '
+        'may contact me directly.',
+    imageUrl: 'assets/man1.jpg',
+    contact: '+92-333-3344556',
+    status: MaleMaritalStatus.previouslyMarried,
+    hasChildren: false,
+    isShortListed: false,
+  ),
+
+  Profile(
+    id: 'm4',
+    name: 'Tariq Butt',
+    age: 22,
+    city: 'Lahore',
+    occupation: 'Fresh Graduate',
+    hobbies: [Hobby.gaming, Hobby.reading, Hobby.sports],
+    traits: [Trait.humble, Trait.patient, Trait.religious],
+    description:
+    'Salam. I am a fresh graduate currently starting my career in Lahore. '
+        'I may be young but I take marriage seriously and my family fully supports '
+        'this decision. Looking for someone simple, religious and kind-hearted.',
+    imageUrl: 'assets/man5.jpg',
+    contact: '+92-300-4455667',
+    status: MaleMaritalStatus.neverMarried,
+    hasChildren: false,
+    isShortListed: false,
+  ),
+
+  // ── Islamabad ───────────────────────────────────────────────────────────────
+
+  Profile(
+    id: 'm5',
+    name: 'Faisal Siddiqui',
+    age: 29,
+    city: 'Islamabad',
+    occupation: 'Civil Servant',
+    hobbies: [Hobby.reading, Hobby.writing, Hobby.travelling],
+    traits: [Trait.educated, Trait.charismatic, Trait.religious],
+    description:
+    'Assalamu Alaikum. I work in the civil service in Islamabad and I take great '
+        'pride in serving my country and my deen. I am well-read and value intellectual '
+        'conversations. Looking for a partner who is cultured, religious and family-oriented.',
+    imageUrl: 'assets/man9.jpg',
+    contact: '+92-311-5566778',
+    status: MaleMaritalStatus.neverMarried,
+    hasChildren: false,
+    isShortListed: false,
+  ),
+
+  Profile(
+    id: 'm6',
+    name: 'Kamran Baig',
+    age: 38,
+    city: 'Islamabad',
+    occupation: 'Retired Army Officer',
+    hobbies: [Hobby.fitness, Hobby.sports, Hobby.gardening],
+    traits: [Trait.brave, Trait.strong, Trait.familyOriented],
+    description:
+    'Salam. I am a retired army officer settled in Islamabad. I have been '
+        'previously married and have two children who live with me. I am looking '
+        'for a mature, patient and understanding woman who is comfortable with '
+        'an existing family. Honesty and respect are my priorities.',
+    imageUrl: 'assets/man2.jpg',
+    contact: '+92-333-6677889',
+    status: MaleMaritalStatus.secondMarriage,
+    hasChildren: true,
+    isShortListed: false,
+  ),
+
+  Profile(
+    id: 'm7',
+    name: 'Zaid Rehman',
+    age: 24,
+    city: 'Islamabad',
+    occupation: 'Graphic Designer',
+    hobbies: [Hobby.photography, Hobby.travelling, Hobby.writing],
+    traits: [Trait.creative, Trait.modern, Trait.kind],
+    description:
+    'Hi! I am a graphic designer in Islamabad with a passion for creativity. '
+        'I am looking for someone who appreciates art and beauty in life while '
+        'staying grounded in Islamic values. My family is supportive and involved.',
+    imageUrl: 'assets/man6.jpg',
+    contact: '+92-300-7788990',
+    status: MaleMaritalStatus.neverMarried,
+    hasChildren: false,
+    isShortListed: false,
+  ),
+
+  // ── Karachi ─────────────────────────────────────────────────────────────────
+
+  Profile(
+    id: 'm8',
+    name: 'Ahmed Rizvi',
+    age: 32,
+    city: 'Karachi',
+    occupation: 'Chartered Accountant',
+    hobbies: [Hobby.reading, Hobby.fitness, Hobby.cooking],
+    traits: [Trait.hardworking, Trait.honest, Trait.religious],
+    description:
+    'Assalamu Alaikum. I am a chartered accountant in Karachi with a stable '
+        'career and a grounded lifestyle. I pray regularly and try to keep the '
+        'sunnah alive in my daily life. Looking for a sincere and practicing Muslimah.',
+    imageUrl: 'assets/man4.jpg',
+    contact: '+92-321-8899001',
+    status: MaleMaritalStatus.neverMarried,
+    hasChildren: false,
+    isShortListed: false,
+  ),
+
+  Profile(
+    id: 'm9',
+    name: 'Saad Naqvi',
+    age: 40,
+    city: 'Karachi',
+    occupation: 'Shipping Manager',
+    hobbies: [Hobby.travelling, Hobby.sports, Hobby.gardening],
+    traits: [Trait.patient, Trait.traditional, Trait.familyOriented],
+    description:
+    'Assalamu Alaikum. I am a senior manager in a shipping company in Karachi. '
+        'I have been widowed for two years and have one child. I am looking for a '
+        'kind and patient woman who can be a loving mother and a supportive partner. '
+        'Families may contact me directly.',
+    imageUrl: 'assets/man10.jpg',
+    contact: '+92-300-9900112',
+    status: MaleMaritalStatus.previouslyMarried,
+    hasChildren: true,
+    isShortListed: false,
+  ),
+
+  Profile(
+    id: 'm10',
+    name: 'Omar Shah',
+    age: 27,
+    city: 'Karachi',
+    occupation: 'IT Professional',
+    hobbies: [Hobby.gaming, Hobby.reading, Hobby.fitness],
+    traits: [Trait.humble, Trait.funny, Trait.kind],
+    description:
+    'Salam! I am an IT professional from Karachi with a good sense of humour '
+        'and a calm personality. I believe marriage should be built on friendship '
+        'and mutual respect. Looking for someone simple and God-fearing.',
+    imageUrl: 'assets/man8.jpg',
+    contact: '+92-333-1122334',
+    status: MaleMaritalStatus.neverMarried,
+    hasChildren: false,
+    isShortListed: false,
+  ),
+
+  // ── Faisalabad ──────────────────────────────────────────────────────────────
+
+  Profile(
+    id: 'm11',
+    name: 'Imran Tariq',
+    age: 28,
+    city: 'Faisalabad',
+    occupation: 'Business Owner',
+    hobbies: [Hobby.sports, Hobby.cooking, Hobby.calligraphy],
+    traits: [Trait.traditional, Trait.religious, Trait.caring],
+    description:
+    'Assalamu Alaikum. I run a family business in Faisalabad and am well settled. '
+        'I come from a conservative background and value tradition and Islamic values '
+        'above all else. Looking for a homely and religious partner.',
+    imageUrl: 'assets/man3.jpg',
+    contact: '+92-341-2233446',
+    status: MaleMaritalStatus.neverMarried,
+    hasChildren: false,
+    isShortListed: false,
+  ),
+
+  Profile(
+    id: 'm12',
+    name: 'Naveed Bukhari',
+    age: 36,
+    city: 'Faisalabad',
+    occupation: 'Textile Engineer',
+    hobbies: [Hobby.reading, Hobby.gardening, Hobby.fitness],
+    traits: [Trait.hardworking, Trait.patient, Trait.honest],
+    description:
+    'Salam. I am a textile engineer in Faisalabad. I was previously married '
+        'and have one child in my custody. I am looking for a mature and understanding '
+        'woman who is kind-hearted and family-oriented. Open and honest communication '
+        'is something I value greatly.',
+    imageUrl: 'assets/man1.jpg',
+    contact: '+92-300-3344557',
+    status: MaleMaritalStatus.previouslyMarried,
+    hasChildren: true,
+    isShortListed: false,
+  ),
+
+  // ── Multan ──────────────────────────────────────────────────────────────────
+
+  Profile(
+    id: 'm13',
+    name: 'Asad Khan',
+    age: 25,
+    city: 'Multan',
+    occupation: 'Bank Officer',
+    hobbies: [Hobby.sports, Hobby.travelling, Hobby.reading],
+    traits: [Trait.brave, Trait.charismatic, Trait.religious],
+    description:
+    'Assalamu Alaikum. I am a young professional from Multan working in banking. '
+        'I am passionate about my deen and my family. I am looking for a pious and '
+        'caring partner to build a home with. My parents are fully involved.',
+    imageUrl: 'assets/man6.jpg',
+    contact: '+92-361-4455668',
+    status: MaleMaritalStatus.neverMarried,
+    hasChildren: false,
+    isShortListed: false,
+  ),
+
+  Profile(
+    id: 'm14',
+    name: 'Rana Gillani',
+    age: 39,
+    city: 'Multan',
+    occupation: 'Landlord',
+    hobbies: [Hobby.gardening, Hobby.cooking, Hobby.reading],
+    traits: [Trait.familyOriented, Trait.strong, Trait.patient],
+    description:
+    'Assalamu Alaikum. I am a landlord from Multan with a comfortable and '
+        'stable life. I have been married twice before and have children from '
+        'my first marriage. I am looking for a patient and understanding woman '
+        'who values a peaceful home. Serious inquiries only.',
+    imageUrl: 'assets/man9.jpg',
+    contact: '+92-300-5566779',
+    status: MaleMaritalStatus.thirdMarriage,
+    hasChildren: true,
+    isShortListed: false,
+  ),
+
+  // ── Abbottabad ──────────────────────────────────────────────────────────────
+
+  Profile(
+    id: 'm15',
+    name: 'Junaid Qureshi',
+    age: 23,
+    city: 'Abbottabad',
+    occupation: 'Medical Student',
+    hobbies: [Hobby.photography, Hobby.travelling, Hobby.fitness],
+    traits: [Trait.humble, Trait.creative, Trait.kind],
+    description:
+    'Salam! I am a medical student in Abbottabad in my final year. '
+        'I am young but serious about settling down after graduation. '
+        'Looking for someone patient, religious and supportive. '
+        'My family is involved in the process.',
+    imageUrl: 'assets/man5.jpg',
+    contact: '+92-992-6677880',
+    status: MaleMaritalStatus.neverMarried,
+    hasChildren: false,
+    isShortListed: false,
+  ),
+
+  Profile(
+    id: 'm16',
+    name: 'Waqar Ayub',
+    age: 33,
+    city: 'Abbottabad',
+    occupation: 'Civil Engineer',
+    hobbies: [Hobby.sports, Hobby.cooking, Hobby.gardening],
+    traits: [Trait.strong, Trait.honest, Trait.caring],
+    description:
+    'Assalamu Alaikum. I am an engineer based in Abbottabad. I enjoy the '
+        'peaceful lifestyle of the city and I am looking for someone who shares '
+        'that appreciation. I am family-oriented and take my responsibilities '
+        'seriously. Looking for a sincere and grounded partner.',
+    imageUrl: 'assets/man7.jpg',
+    contact: '+92-300-7788991',
+    status: MaleMaritalStatus.neverMarried,
+    hasChildren: false,
+    isShortListed: false,
+  ),
+
+  // ── Hyderabad ───────────────────────────────────────────────────────────────
+
+  Profile(
+    id: 'm17',
+    name: 'Shahid Memon',
+    age: 31,
+    city: 'Hyderabad',
+    occupation: 'University Lecturer',
+    hobbies: [Hobby.reading, Hobby.calligraphy, Hobby.writing],
+    traits: [Trait.educated, Trait.religious, Trait.introverted],
+    description:
+    'Assalamu Alaikum. I am a university lecturer in Hyderabad with a deep love '
+        'for Islamic knowledge and literature. I am quiet and reflective by nature. '
+        'Looking for a partner who values knowledge, simplicity and sincerity.',
+    imageUrl: 'assets/man2.jpg',
+    contact: '+92-221-8899002',
+    status: MaleMaritalStatus.neverMarried,
+    hasChildren: false,
+    isShortListed: false,
+  ),
+
+  Profile(
+    id: 'm18',
+    name: 'Farrukh Soomro',
+    age: 37,
+    city: 'Hyderabad',
+    occupation: 'Entrepreneur',
+    hobbies: [Hobby.sports, Hobby.travelling, Hobby.fitness],
+    traits: [Trait.extroverted, Trait.ambitious, Trait.brave],
+    description:
+    'Salam. I am a successful entrepreneur in Hyderabad. I was previously married '
+        'with no children. I am outgoing, driven and looking for a confident and '
+        'independent-minded partner who also values family and deen.',
+    imageUrl: 'assets/man4.jpg',
+    contact: '+92-300-9900113',
+    status: MaleMaritalStatus.secondMarriage,
+    hasChildren: false,
+    isShortListed: false,
+  ),
+
+  // ── Peshawar ────────────────────────────────────────────────────────────────
+
+  Profile(
+    id: 'm19',
+    name: 'Khalid Afridi',
+    age: 28,
+    city: 'Peshawar',
+    occupation: 'Law Enforcement Officer',
+    hobbies: [Hobby.sports, Hobby.fitness, Hobby.travelling],
+    traits: [Trait.brave, Trait.traditional, Trait.religious],
+    description:
+    'Assalamu Alaikum. I am from a respected Pashtun family in Peshawar. '
+        'I work in law enforcement and take pride in my values and my heritage. '
+        'I am looking for a pious, homely and respectful partner. '
+        'Families may contact me directly.',
+    imageUrl: 'assets/man10.jpg',
+    contact: '+92-91-1122335',
+    status: MaleMaritalStatus.neverMarried,
+    hasChildren: false,
+    isShortListed: false,
+  ),
+
+  Profile(
+    id: 'm20',
+    name: 'Adnan Yusufzai',
+    age: 34,
+    city: 'Peshawar',
+    occupation: 'Pharmacist',
+    hobbies: [Hobby.reading, Hobby.gardening, Hobby.cooking],
+    traits: [Trait.patient, Trait.kind, Trait.familyOriented],
+    description:
+    'Salam. I am a pharmacist from Peshawar with a calm and patient nature. '
+        'I have been widowed and have no children. I am looking for a kind and '
+        'understanding woman to share life with. I value peace, honesty and deen '
+        'above all else.',
+    imageUrl: 'assets/man8.jpg',
+    contact: '+92-300-2233448',
+    status: MaleMaritalStatus.previouslyMarried,
+    hasChildren: false,
+    isShortListed: false,
+  ),
+
+  Profile(
+    id: 'm21',
+    name: 'Hamza Rehman',
+    age: 21,
+    city: 'Peshawar',
+    occupation: 'Junior Developer',
+    hobbies: [Hobby.gaming, Hobby.sports, Hobby.reading],
+    traits: [Trait.humble, Trait.religious, Trait.honest],
+    description:
+    'Assalamu Alaikum. I just completed my bachelors and am beginning my career. '
+        'My family has encouraged me to begin the rishta process early. I am '
+        'young, sincere and committed to growing in my deen. Looking for someone '
+        'patient and God-fearing.',
+    imageUrl: 'assets/man6.jpg',
+    contact: '+92-91-3344559',
+    status: MaleMaritalStatus.neverMarried,
+    hasChildren: false,
+    isShortListed: false,
+  ),
+
+];
