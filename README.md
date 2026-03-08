@@ -7,13 +7,13 @@ This project was built as a Flutter portfolio application to demonstrate UI deve
 
 The goal was to make a halal matrimonial platform where users can browse profiles while staying under Shariah guidelines.
 
-## Project Structure
+### Project Structure
 
 lib/
- ├── data/        # Dummy profile data
- ├── models/      # User and filter models
- ├── screens/     # App screens
- ├── widgets/     # Reusable UI components
+ ├── data/        
+ ├── models/      
+ ├── screens/     
+ ├── widgets/     
  └── main.dart
 
 ### Tech Stack 
