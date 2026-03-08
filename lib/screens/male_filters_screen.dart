@@ -2,31 +2,28 @@ import 'package:flutter/material.dart';
 import 'package:matrimonial_app/models/profile.dart';
 import 'package:matrimonial_app/models/filter.dart';
 import 'package:matrimonial_app/widgets/age_slider.dart';
+import 'package:matrimonial_app/models/city.dart';
+import 'package:matrimonial_app/models/user.dart';
 
-class MaleFiltersScreen extends StatefulWidget {
+class FiltersScreen extends StatefulWidget {
+  const FiltersScreen({required this.user});
+  final User user;
   @override
-  State<MaleFiltersScreen> createState() => _MaleFiltersScreenState();
+  State<FiltersScreen> createState() => _FiltersScreenState();
 }
 
-class _MaleFiltersScreenState extends State<MaleFiltersScreen> {
+class _FiltersScreenState extends State<FiltersScreen> {
 
-  final Map<String, bool> _selectedCities = {
-    'Lahore': true,
-    'Islamabad': true,
-    'Karachi': true,
-    'Faisalabad': true,
-    'Multan': true,
-    'Abbottabad': true,
-    'Hyderabad': true,
-    'Peshawar': true,
-  };
-
-  final Map<MaleMaritalStatus, bool> _selectedStatuses = {
-    MaleMaritalStatus.neverMarried: true,
-    MaleMaritalStatus.previouslyMarried: true,
-    MaleMaritalStatus.secondMarriage: true,
-    MaleMaritalStatus.thirdMarriage: true,
-    MaleMaritalStatus.fourthMarriage: true
+  late Map<Enum, bool> _selectedStatuses;
+  final Map<cityNames, bool>_selectedCities = {
+  cityNames.lahore: true,
+  cityNames.islamabad: true,
+  cityNames.karachi: true,
+  cityNames.faisalabad: true,
+  cityNames.multan: true,
+  cityNames.abbottabad: true,
+  cityNames.hyderabad: true,
+  cityNames.peshawar: true,
   };
 
   final Map<String, bool> _childrenFilter = {
@@ -34,16 +31,52 @@ class _MaleFiltersScreenState extends State<MaleFiltersScreen> {
     'noChildren': true,
   };
 
-  RangeValues range = RangeValues(16, 30);
+  void _dealWithInvalidChildrenFilter(){
+    ScaffoldMessenger.of(context).clearSnackBars();
+    ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text("Cannot set both to false"),
+          duration: Duration(seconds: 1),
+        )
+    );
+  }
+
+  late RangeValues range;
+
+  @override
+  void initState(){
+    super.initState();
+    range =  widget.user.gender == Genders.male? RangeValues(16, 30):  RangeValues(18, 30); // age range 16-30 for female profiles and 18-40 for male profiles
+    _selectedStatuses = widget.user.gender == Genders.female? {
+      MaleMaritalStatus.neverMarried: true,
+      MaleMaritalStatus.previouslyMarried: true,
+      MaleMaritalStatus.secondMarriage: true,
+      MaleMaritalStatus.thirdMarriage: true,
+      MaleMaritalStatus.fourthMarriage: true
+    } :
+    {
+      FemaleMaritalStatus.virgin: true,
+      FemaleMaritalStatus.divorcee: true,
+      FemaleMaritalStatus.widowed: true,
+      FemaleMaritalStatus.nonVirgin: true,
+    };
+
+  }
 
   @override
   Widget build(BuildContext context) {
-    bool _onlyVirginsSelected = (_selectedStatuses[MaleMaritalStatus
+    bool _onlyVirginsSelected = widget.user.gender == Genders.male? (_selectedStatuses[MaleMaritalStatus
         .neverMarried] == true &&
         _selectedStatuses[MaleMaritalStatus.secondMarriage] == false &&
         _selectedStatuses[MaleMaritalStatus.thirdMarriage] == false &&
         _selectedStatuses[MaleMaritalStatus.fourthMarriage] == false &&
-        _selectedStatuses[MaleMaritalStatus.previouslyMarried] == false);
+        _selectedStatuses[MaleMaritalStatus.previouslyMarried] == false):
+    (
+        _selectedStatuses[FemaleMaritalStatus.virgin] == true
+            && _selectedStatuses[FemaleMaritalStatus.nonVirgin] == false
+            && _selectedStatuses[FemaleMaritalStatus.divorcee] == false
+            && _selectedStatuses[FemaleMaritalStatus.widowed] == false);
+
     if (_onlyVirginsSelected) {
       _childrenFilter["hasChildren"] = false;
       _childrenFilter["noChildren"] = true;
@@ -83,129 +116,38 @@ class _MaleFiltersScreenState extends State<MaleFiltersScreen> {
               fontWeight: FontWeight.bold
 
           )),
-          CheckboxListTile(
-            value: _selectedCities["Abbottabad"],
-            onChanged: (value) {
-              setState(() {
-                _selectedCities["Abbottabad"] = value!;
-              });
-            },
-            title: Text("Abbottabad"),
-          ),
-          CheckboxListTile(
-            value: _selectedCities["Faisalabad"],
-            onChanged: (value) {
-              setState(() {
-                _selectedCities["Faisalabad"] = value!;
-              });
-            },
-            title: Text("Faisalabad"),
-          ),
-          CheckboxListTile(
-            value: _selectedCities["Hyderabad"],
-            onChanged: (value) {
-              setState(() {
-                _selectedCities["Hyderabad"] = value!;
-              });
-            },
-            title: Text("Hyderabad"),
-          ),
-          CheckboxListTile(
-            value: _selectedCities["Islamabad"],
-            onChanged: (value) {
-              setState(() {
-                _selectedCities["Islamabad"] = value!;
-              });
-            },
-            title: Text("Islamabad"),
-          ),
-          CheckboxListTile(
-            value: _selectedCities["Karachi"],
-            onChanged: (value) {
-              setState(() {
-                _selectedCities["Karachi"] = value!;
-              });
-            },
-            title: Text("Karachi"),
-          ),
-          CheckboxListTile(
-            value: _selectedCities["Lahore"],
-            onChanged: (value) {
-              setState(() {
-                _selectedCities["Lahore"] = value!;
-              });
-            },
-            title: Text("Lahore"),
-          ),
-          CheckboxListTile(
-            value: _selectedCities["Multan"],
-            onChanged: (value) {
-              setState(() {
-                _selectedCities["Multan"] = value!;
-              });
-            },
-            title: Text("Multan"),
-          ),
-          CheckboxListTile(
-            value: _selectedCities["Peshawar"],
-            onChanged: (value) {
-              setState(() {
-                _selectedCities["Peshawar"] = value!;
-              });
-            },
-            title: Text("Peshawar"),
-          ),
+
+         //cities
+         for(var city in cities)
+           CheckboxListTile(
+             value: _selectedCities[city.name],
+             onChanged: (value) {
+               setState(() {
+                 _selectedCities[city.name] = value!;
+               });
+             },
+             title: Text(city.name.name.enumToString()),
+           ),
           Divider(),
+          //marital status
           Text("Marital Status: ", style: TextStyle(
               fontSize: 19,
               fontWeight: FontWeight.bold
           )),
+
+          for(var status in _selectedStatuses.keys)
           CheckboxListTile(
-            value: _selectedStatuses[MaleMaritalStatus.neverMarried],
+            value: _selectedStatuses[status],
             onChanged: (value) {
               setState(() {
-                _selectedStatuses[MaleMaritalStatus.neverMarried] = value!;
+                _selectedStatuses[status] = value!;
               });
             },
-            title: Text("Never Married"),
+            title: Text(status.name.enumToString()),
           ),
-          CheckboxListTile(
-            value: _selectedStatuses[MaleMaritalStatus.previouslyMarried],
-            onChanged: (value) {
-              setState(() {
-                _selectedStatuses[MaleMaritalStatus.previouslyMarried] = value!;
-              });
-            },
-            title: Text("Previously Married"),
-          ),
-          CheckboxListTile(
-            value: _selectedStatuses[MaleMaritalStatus.secondMarriage],
-            onChanged: (value) {
-              setState(() {
-                _selectedStatuses[MaleMaritalStatus.secondMarriage] = value!;
-              });
-            },
-            title: Text("Second Marriage"),
-          ),
-          CheckboxListTile(
-            value: _selectedStatuses[MaleMaritalStatus.thirdMarriage],
-            onChanged: (value) {
-              setState(() {
-                _selectedStatuses[MaleMaritalStatus.thirdMarriage] = value!;
-              });
-            },
-            title: Text("Third Marriage"),
-          ),
-          CheckboxListTile(
-            value: _selectedStatuses[MaleMaritalStatus.fourthMarriage],
-            onChanged: (value) {
-              setState(() {
-                _selectedStatuses[MaleMaritalStatus.fourthMarriage] = value!;
-              });
-            },
-            title: Text("Fourth Marriage"),
-          ),
+
           Divider(),
+          //children
           Text("Children: ", style: TextStyle(
               fontSize: 19,
               fontWeight: FontWeight.bold
@@ -217,13 +159,7 @@ class _MaleFiltersScreenState extends State<MaleFiltersScreen> {
               setState(() {
                 if ((_childrenFilter["noChildren"] == false) &&
                     (value == false)) {
-                  ScaffoldMessenger.of(context).clearSnackBars();
-                  ScaffoldMessenger.of(context).showSnackBar(
-                      SnackBar(
-                        content: Text("Cannot set both to false"),
-                        duration: Duration(seconds: 1),
-                      )
-                  );
+                  _dealWithInvalidChildrenFilter();
                   return;
                 }
                 _childrenFilter["hasChildren"] = value!;
@@ -238,13 +174,7 @@ class _MaleFiltersScreenState extends State<MaleFiltersScreen> {
               setState(() {
                 if ((_childrenFilter["hasChildren"] == false) &&
                     (value == false)) {
-                  ScaffoldMessenger.of(context).clearSnackBars();
-                  ScaffoldMessenger.of(context).showSnackBar(
-                      SnackBar(
-                        content: Text("Cannot set both to false"),
-                        duration: Duration(seconds: 1),
-                      )
-                  );
+                  _dealWithInvalidChildrenFilter();
                   return;
                 }
                 _childrenFilter["noChildren"] = value!;
@@ -258,7 +188,7 @@ class _MaleFiltersScreenState extends State<MaleFiltersScreen> {
                 Filter filters = Filter(
                   range: range,
                   children: _childrenFilter,
-                  status: _selectedStatuses.map((key, value) => MapEntry(key as Enum, value)),
+                  status: _selectedStatuses.map((key, value) => MapEntry(key, value)),
                   cities: _selectedCities,
                 );
                 Navigator.of(context).pop(filters);
