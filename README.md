@@ -11,10 +11,28 @@ The goal was to make a halal matrimonial platform where users can browse profile
 
 lib/
 
- ├── data/        
- ├── models/      
- ├── screens/     
- ├── widgets/     
+ ├── data/ 
+     ├── female_dummy_data.dart
+     ├── male_dummy_data.dart
+ ├── models/ 
+     ├── filter.dart
+     ├── profile.dart
+     ├── user.dart
+ ├── screens/  
+     ├── female_filters_screen.dart
+     ├── male_filters_screen.dart
+     ├── main_screen.dart
+     ├── login_screen.dart
+     ├── profile_screen.dart
+     ├── profiles_screen.dart
+     ├── shortlist_screen.dart
+     ├── cities_screen.dart
+ ├── widgets/    
+     ├── age_slider.dart
+     ├── city_screen.dart
+     ├── contact_button.dart
+     ├── profile_card.dart
+     ├── shortlist_button.dart
  └── main.dart
 
 ### Tech Stack 
