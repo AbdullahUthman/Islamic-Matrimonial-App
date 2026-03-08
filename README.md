@@ -10,6 +10,7 @@ The goal was to make a halal matrimonial platform where users can browse profile
 ### Project Structure
 
 lib/
+
 ├── data/ 
  
      ├── female_dummy_data.dart
