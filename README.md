@@ -10,16 +10,17 @@ The goal was to make a halal matrimonial platform where users can browse profile
 ### Project Structure
 
 lib/
-
- ├── data/ 
+├── data/ 
  
      ├── female_dummy_data.dart
      ├── male_dummy_data.dart
  ├── models/ 
+ 
      ├── filter.dart
      ├── profile.dart
      ├── user.dart
  ├── screens/  
+ 
      ├── female_filters_screen.dart
      ├── male_filters_screen.dart
      ├── main_screen.dart
@@ -28,7 +29,8 @@ lib/
      ├── profiles_screen.dart
      ├── shortlist_screen.dart
      ├── cities_screen.dart
- ├── widgets/    
+ ├── widgets/   
+ 
      ├── age_slider.dart
      ├── city_screen.dart
      ├── contact_button.dart
