@@ -10,6 +10,7 @@ The goal was to make a halal matrimonial platform where users can browse profile
 ### Project Structure
 
 lib/
+
  ├── data/        
  ├── models/      
  ├── screens/     
@@ -75,7 +76,7 @@ flutter doctor
 
 ### 2. Clone the Repository
 ```bash
-git clone https://github.com/abdullahuthman/matrimonial_app.git
+git clone https://github.com/abdullahuthman/islamic_matrimonial_app.git
 ```
 
 ### 3. Install dependancies
