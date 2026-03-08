@@ -1,57 +1,49 @@
 # Islamic Matrimonial App
 
-An Islamic Matrimonial App made in Flutter. The motivation behind the app is to provide a halal platform for people seeking marriage ("Rishta") while avoiding free mixing between genders and any haram environment.
+An Islamic matrimonial app built in Flutter. The motivation behind the app is to provide a halal platform for people seeking marriage ("Rishta") while avoiding free mixing between genders and any haram environment.
 
 ## About the Project
-This project was built as a Flutter portfolio application to demonstrate UI development, filtering logic, and basic application structure.
 
-The goal was to make a halal matrimonial platform where users can browse profiles while staying under Shariah guidelines.
+This project was built as a Flutter portfolio application to demonstrate UI development, filtering logic, and basic application structure. The goal was to create a halal matrimonial platform where users can browse profiles while staying within Shariah guidelines.
 
-### Project Structure
+## Features
 
+- Gender-based profile browsing (male users see female profiles and vice versa)
+- Shortlisting profiles with swipe-to-remove functionality
+- Filtering profiles by city, age range, marital status, and children
+
+## Tech Stack
+
+- Flutter
+- Dart
+
+## Project Structure
+```
 lib/
-
-├── data/ 
- 
-     ├── female_dummy_data.dart
-     ├── male_dummy_data.dart
- ├── models/ 
- 
-     ├── filter.dart
-     ├── profile.dart
-     ├── user.dart
- ├── screens/  
- 
-     ├── female_filters_screen.dart
-     ├── male_filters_screen.dart
-     ├── main_screen.dart
-     ├── login_screen.dart
-     ├── profile_screen.dart
-     ├── profiles_screen.dart
-     ├── shortlist_screen.dart
-     ├── cities_screen.dart
- ├── widgets/   
- 
-     ├── age_slider.dart
-     ├── city_screen.dart
-     ├── contact_button.dart
-     ├── profile_card.dart
-     ├── shortlist_button.dart
- └── main.dart
-
-### Tech Stack 
-* Flutter
-* Dart
-
-### Features
-* Gender based profile browsing (male users see female profiles and vice versa)
-* Shortlisting profiles
-* Filtering viewable profiles and cities
-
-### Limitations
-* The app does not have a backend data base (relies on hard-coded dummy data)
-* Direct calling functionality is planned but not yet implemented
-* No State management
+├── data/
+│   ├── female_dummy_data.dart
+│   └── male_dummy_data.dart
+├── models/
+│   ├── filter.dart
+│   ├── profile.dart
+│   └── user.dart
+├── screens/
+│   ├── cities_screen.dart
+│   ├── female_filters_screen.dart
+│   ├── male_filters_screen.dart
+│   ├── main_screen.dart
+│   ├── login_screen.dart
+│   ├── profile_screen.dart
+│   ├── profiles_screen.dart
+│   └── shortlist_screen.dart
+├── widgets/
+│   ├── age_slider.dart
+│   ├── city_card.dart
+│   ├── contact_button.dart
+│   ├── profile_card.dart
+│   └── shortlist_button.dart
+└── main.dart
+```
 
 ## Screens
 
@@ -79,30 +71,44 @@ lib/
 ### Shortlist Screen
 <img width="300" src="https://github.com/user-attachments/assets/3d8607bd-30ce-4c56-b582-491c0c7dba41">
 
+## Limitations
+
+- No backend database (relies on hardcoded dummy data)
+- Direct calling functionality is planned but not yet implemented
+- No state management
+
 ## How to Run
 
-Follow these steps to run the Flutter app locally.
+### Prerequisites
 
-### 1. Prerequisites
 Make sure you have the following installed:
-
 - [Flutter SDK](https://docs.flutter.dev/get-started/install)
 - Android Studio or VS Code with Flutter/Dart extensions
 - An Android/iOS emulator or a physical device
 
-Verify Flutter installation:
-
+Verify your Flutter installation:
 ```bash
 flutter doctor
 ```
 
-### 2. Clone the Repository
+### Steps
+
+1. Clone the repository:
 ```bash
 git clone https://github.com/abdullahuthman/islamic_matrimonial_app.git
 ```
 
-### 3. Install dependancies
+2. Navigate into the project directory:
+```bash
+cd islamic_matrimonial_app
+```
+
+3. Install dependencies:
 ```bash
 flutter pub get
 ```
 
+4. Run the app:
+```bash
+flutter run
+```
