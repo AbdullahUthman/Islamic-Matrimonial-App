@@ -84,7 +84,7 @@ lib/
 Make sure you have the following installed:
 - [Flutter SDK](https://docs.flutter.dev/get-started/install)
 - Android Studio or VS Code with Flutter/Dart extensions
-- An Android/iOS emulator or a physical device
+- An Android emulator or a physical device
 
 Verify your Flutter installation:
 ```bash
