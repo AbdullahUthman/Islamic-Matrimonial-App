@@ -29,8 +29,7 @@ lib/
 │   └── user.dart
 ├── screens/
 │   ├── cities_screen.dart
-│   ├── female_filters_screen.dart
-│   ├── male_filters_screen.dart
+│   ├── filters_screen.dart
 │   ├── main_screen.dart
 │   ├── login_screen.dart
 │   ├── profile_screen.dart
